@@ -1,0 +1,49 @@
+.root-Calculator{
+    max-width: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    & .monitor{
+        width: 270px;
+        height: 70px;
+        text-align: end;
+        font-size: 50px;
+        color: #EBEEEA;
+        font-weight: 600;
+        overflow: scroll;
+    }
+    & .historyContainer {
+        width: 270px;
+        height: 150px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        font-size: 25px;
+        font-weight: 600;
+        color: white;
+        opacity: 0.3;
+        
+        &::before {
+            content: '';
+            margin-top: auto;
+        }
+    }
+    
+    & button{
+        width: 60px;
+        aspect-ratio: 1;
+        font-size: 20px;
+        border: none;
+        border-radius: 50px;
+        color: #DFE4E2;
+        font-weight: 700;
+        transition: 200ms;
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1.02);
+        }
+    }
+}
