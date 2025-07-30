@@ -4,14 +4,17 @@
     flex-wrap: wrap;
     gap: 10px;
 
-    & .monitor{
+    & .monitor {
         width: 270px;
         height: 70px;
-        text-align: end;
         font-size: 50px;
-        color: #EBEEEA;
         font-weight: 600;
-        overflow: scroll;
+        color: #EBEEEA;
+
+        display: block;
+        text-align: end;
+        overflow-x: auto;
+        white-space: nowrap;
     }
     & .historyContainer {
         width: 270px;
